@@ -25,23 +25,6 @@ let red_markers = [],
 // you can create geoJSON layers here: http://geojson.io/
 // and learn more about the format here: https://en.wikipedia.org/wiki/GeoJSON
 // to get a fill color, you will need to set the `myColor` property as below. 
-let myGeoJSON= {
-"type":"FeatureCollection",
-"features":
- [{"type":"Feature",
-    "properties":{myColor: 'red'},
-     "geometry":{"type":"Polygon",
-                 "coordinates":[[[-85.60546875,49.03786794532644],[-96.6796875,40.713955826286046],
-                                 [-79.62890625,37.71859032558816],[-81.2109375,49.26780455063753],
-                                 [-85.60546875,49.03786794532644]]]}},
-    {"type":"Feature",
-     "properties":{myColor: 'green'},
-     "geometry":{"type":"Polygon",
-                 "coordinates":[[[-113.203125,58.35563036280967],[-114.78515624999999,51.944264879028765],
-                                 [-101.6015625,51.944264879028765],[-112.32421875,58.263287052486035],
-                                 [-113.203125,58.35563036280967]]]
-                }}]};
-
 
 
 /* a function that will run when the page loads.  It creates the map
@@ -60,6 +43,33 @@ function initializeMap() {
   ///////////////////////////////
   // YOU NEED TO CHANGE THESE! //
   ///////////////////////////////
+  
+  let MRBMCircle = new google.maps.Circle({
+    strokeColor: 'red',
+    strokeOpacity: 1,
+    strokeWeight: 2,
+    fillColor: 'red',
+    fillOpacity: 0.10,
+    // in general, we always have to *set the map* when we
+    // add features. 
+    map: my_map,
+    center: {"lat": 22.6666667, "lng":-83.2666663888889},
+    radius: 1970000,
+  });  
+  
+  let IRBMCircle = new google.maps.Circle({
+      strokeColor: 'red',
+      strokeOpacity: 1,
+      strokeWeight: 2,
+      fillColor: 'red',
+      fillOpacity: 0.10,
+      // in general, we always have to *set the map* when we
+      // add features. 
+      map: my_map,
+      center: {"lat": 22.6666667, "lng":-83.2666663888889},
+      radius: 3970000,
+  
+  });  
 
   let all_my_markers =
       [{position: new google.maps.LatLng(22.9166667,-82.98333333333333),
@@ -93,7 +103,7 @@ function initializeMap() {
         map: my_map,
         icon: blueURL, // this sets the image that represents the marker in the map
         title: "Washington DC",
-        window_content: "<h1>Washington, DC</h1><p> The MRBM's could reach the United States Capital. IRBM's could reach as far as San Francisco. </p>"
+        window_content: "<h1>Washington, DC</h1><p> The MRBM's could reach the United States Capital. IRBM's could reach as far as San </p>"
        }
       ];
 
@@ -169,33 +179,7 @@ function initializeMap() {
   //  }
 //  });
 
-  let MRBMCircle = new google.maps.Circle({
-    strokeColor: 'red',
-    strokeOpacity: 1,
-    strokeWeight: 2,
-    fillColor: 'red',
-    fillOpacity: 0.10,
-    // in general, we always have to *set the map* when we
-    // add features. 
-    map: my_map,
-    center: {"lat": 22.6666667, "lng":-83.2666663888889},
-    radius: 1970000
-  });  
-
-  let IRBMCircle = new google.maps.Circle({
-      strokeColor: 'red',
-      strokeOpacity: 1,
-      strokeWeight: 2,
-      fillColor: 'red',
-      fillOpacity: 0.10,
-      // in general, we always have to *set the map* when we
-      // add features. 
-      map: my_map,
-      center: {"lat": 22.6666667, "lng":-83.2666663888889},
-      radius: 3970000
- 
-  });  
-
+  
 }
 
 // this hides all markers in the array
