@@ -8,27 +8,26 @@
 
 section#intro {
     grid-area: intro;
-    background-color: var(--color-highlight1);
-    border: 1px solid var(--color-custom-borders);
+    background-color:  #f2f2f2;
+    font-family: 'Zilla Slab', serif;
 }
 
 
 section#map_canvas {
     grid-area: map;
-    background-color: var(--color-highlight2);
-    border: 1px solid var(--color-custom-borders);
+    background-color: #cccccc;
 }
 
 section#legend {
     grid-area: legend;
-    background-color: var(--color-highlight2);
-    border: 1px solid var(--color-custom-borders);
+    background-color:  #cccccc;
+    font-family: 'Zilla Slab', serif;
 }
 
 section#maintext {
     grid-area: main;
-    background-color: var(--color-highlight1);
-    border: 1px solid var(--color-custom-borders);
+    background-color: #f2f2f2;
+    font-family: 'Zilla Slab', serif;
 }
 
 /* we use an extra div here to allow the "legend" text to sit by itself */
@@ -36,7 +35,7 @@ section#maintext {
 div#map_legend {
     width: 100%;
     display: grid;
-    flex-direction: row;
+    flex-direction: grid;
     justify-content: space-around;
     gap: 5px;
     flex-wrap: wrap;
@@ -44,9 +43,8 @@ div#map_legend {
 
 }
 div#map_legend div.pointer {
-    border: 1px black solid;
-    border-radius: 10px;
-    margin-left: 5px;
+    border: 3px #262626 double;
+    margin-left: 1px;
     margin-right: 5px;
     /* flex-basis: 500px; */
     cursor:pointer;
@@ -54,7 +52,6 @@ div#map_legend div.pointer {
 
 div.pointer h1 {
     font-size: 1.5em;
-    image
 }
 
 div.pointer img {
@@ -116,7 +113,7 @@ button.rounded {
   border: 1px black solid;
 }
 button#hide {
-  background:orange;
+  background:white;
 }
 button#show {
   background:green;

@@ -3,7 +3,7 @@
 // whenever we need to -- they have 'global scope'
 let my_map, // this will hold the map
     my_map_options, // this will hold the options we'll use to create the map
-    my_center = new google.maps.LatLng(41.8986,12.4768), // center of map
+    my_center = new google.maps.LatLng(21.521757,-77.781166), // center of map
     my_markers = [], // we use this in the main loop below to hold the markers
     // this one is strange.  In google maps, there is usually only one
     // infowindow object -- its content and position change when you click on a
@@ -26,21 +26,22 @@ let red_markers = [],
 // and learn more about the format here: https://en.wikipedia.org/wiki/GeoJSON
 // to get a fill color, you will need to set the `myColor` property as below. 
 let myGeoJSON= {
-  "type":"FeatureCollection",
-  "features":
-  [{"type":"Feature",
+"type":"FeatureCollection",
+"features":
+ [{"type":"Feature",
     "properties":{myColor: 'red'},
-    "geometry":{"type":"Polygon",
-                "coordinates":[[[-85.60546875,49.03786794532644],[-96.6796875,40.713955826286046],
-                                [-79.62890625,37.71859032558816],[-81.2109375,49.26780455063753],
-                                [-85.60546875,49.03786794532644]]]}},
-   {"type":"Feature",
-    "properties":{myColor: 'green'},
-    "geometry":{"type":"Polygon",
-                "coordinates":[[[-113.203125,58.35563036280967],[-114.78515624999999,51.944264879028765],
-                                [-101.6015625,51.944264879028765],[-112.32421875,58.263287052486035],
-                                [-113.203125,58.35563036280967]]]
-               }}]};
+     "geometry":{"type":"Polygon",
+                 "coordinates":[[[-85.60546875,49.03786794532644],[-96.6796875,40.713955826286046],
+                                 [-79.62890625,37.71859032558816],[-81.2109375,49.26780455063753],
+                                 [-85.60546875,49.03786794532644]]]}},
+    {"type":"Feature",
+     "properties":{myColor: 'green'},
+     "geometry":{"type":"Polygon",
+                 "coordinates":[[[-113.203125,58.35563036280967],[-114.78515624999999,51.944264879028765],
+                                 [-101.6015625,51.944264879028765],[-112.32421875,58.263287052486035],
+                                 [-113.203125,58.35563036280967]]]
+                }}]};
+
 
 
 /* a function that will run when the page loads.  It creates the map
@@ -48,7 +49,7 @@ let myGeoJSON= {
 function initializeMap() {
   my_map_options = {
     center:  my_center, // to change this value, change my_center above
-    zoom: 13,  // higher is closer-up
+    zoom: 4.5,  // higher is closer-up
     mapTypeId: google.maps.MapTypeId.HYBRID // you can also use TERRAIN, STREETMAP, SATELLITE
   };
 
@@ -61,25 +62,38 @@ function initializeMap() {
   ///////////////////////////////
 
   let all_my_markers =
-      [{position: new google.maps.LatLng(41.9000,12.5000),
+      [{position: new google.maps.LatLng(22.9166667,-82.98333333333333),
         map: my_map,
-        icon: blueURL, // this sets the image that represents the marker in the map to the one
+        icon: redURL, // this sets the image that represents the marker in the map to the one
         // located at the URL which is given by the variable blueURL, see above
-        title: "first Marker",
-        window_content: "<h1>Marker1</h1><p> and this would be the extended description</p>"
+        title: "Guanajay site",
+        window_content: '<h1>Guanajay site</h1><p> IRBM site. Photo taken in 1962. Zoom in to see what the site looks like now.</p><img title="Guanajay Site. Src: in 1962"  src="https://www.militaryimages.net/media/guanajay-irbm-launch-site.1957/full/">'
        },
-       {position: new google.maps.LatLng(41.8902,12.4923),
-        map: my_map,
-        icon: blueURL, // this sets the image that represents the marker in the map
-        title: "second Marker",
-        window_content: "<h1>Marker2</h1><p> and <a href='http://something'>this would</a> be the extended description</p>"
-       },
-       {position: new google.maps.LatLng(41.8986,12.4768),
+       {position: new google.maps.LatLng(22.6666667, -83.2666663888889),
         map: my_map,
         icon: redURL, // this sets the image that represents the marker in the map
-        title: "third Marker",
-        window_content: '<h1>Marker3</h1><img title="Picture of Quote. Src: someone, some year"  src="https://s-media-cache-ak0.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf.jpg"/>' +
-        '<blockquote>quote quote quote quote</blockquote>'
+        title: "Los Palacios site at San Cristobal",
+        window_content: '<h1>Los Palacios at San Cristobal</h1><p> MRBM site. Photo taken in 1962. Zoom in to see what the site looks like now.</p><img title="Los Palacios. Src: in 1962" src="https://nsarchive2.gwu.edu/nsa/cuba_mis_cri/26.jpg">'
+        //<p> and <a href='http://something'>this would</a> be the extended description</p>"
+       },
+       {position: new google.maps.LatLng(22.4166667,-79.58333333333333),
+        map: my_map,
+        icon: redURL, // this sets the image that represents the marker in the map
+        title: "Remedios site",
+        window_content: '<h1>Remedios site</h1><p> IRBM site. Photo taken in 1962. Zoom in to see what the site looks like now.</p><img title="Remedios site. Src: 1962"  src="https://jfk14thday.com/wp-content/uploads/2013/11/074-10295613.jpg"/>' //+
+        //'<blockquote>quote quote quote quote</blockquote>'
+       },
+       {position: new google.maps.LatLng(22.7166667,-80.03333305555556),
+        map: my_map,
+        icon: redURL, // this sets the image that represents the marker in the map
+        title: "Sagua la Grande",
+        window_content: '<h1>Sagua la Grande site</h1><p> MRBM site. Photo taken in 1962. Zoom in to see what the site looks like now.</p><img title="Sagua la Grande. Src: in 1962" src="https://nsarchive2.gwu.edu/nsa/cuba_mis_cri/14.jpg">'
+       },
+       {position: new google.maps.LatLng(38.907192,-77.036873),
+        map: my_map,
+        icon: blueURL, // this sets the image that represents the marker in the map
+        title: "Washington DC",
+        window_content: "<h1>Washington, DC</h1><p> The MRBM's could reach the United States Capital. IRBM's could reach as far as San Francisco. </p>"
        }
       ];
 
@@ -138,34 +152,48 @@ function initializeMap() {
   // API docs: https://developers.google.com/maps/documentation/javascript/examples/polygon-simple
   // https://developers.google.com/maps/documentation/javascript/examples/rectangle-simple
   // etc. 
-  let romeRectangle = new google.maps.Rectangle({
-    strokeColor: 'maroon',
-    strokeOpacity: 0.8,
-    strokeWeight: 2,
-    fillColor: 'saddlebrown',
-    fillOpacity: 0.35,
+  //let romeRectangle = new google.maps.Rectangle({
+  //  strokeColor: 'maroon',
+  //  strokeOpacity: 0.8,
+  //  strokeWeight: 2,
+  //  fillColor: 'saddlebrown',
+  //  fillOpacity: 0.35,
     // in general, we always have to *set the map* when we
     // add features. 
-    map: my_map,
-    bounds: {
-      north: 41.920,
-      south: 41.900,
-      east: 12.501,
-      west: 12.485
-    }
-  });
+  //  map: my_map,
+  //  bounds: {
+  //    north: 41.920,
+  //    south: 41.900,
+  //    east: 12.501,
+  //    west: 12.485
+  //  }
+//  });
 
-  let romeCircle = new google.maps.Circle({
-    strokeColor: 'darkgreen',
-    strokeOpacity: 0.8,
+  let MRBMCircle = new google.maps.Circle({
+    strokeColor: 'red',
+    strokeOpacity: 1,
     strokeWeight: 2,
-    fillColor: 'forestgreen',
-    fillOpacity: 0.35,
+    fillColor: 'red',
+    fillOpacity: 0.10,
     // in general, we always have to *set the map* when we
     // add features. 
     map: my_map,
-    center: {"lat": 41.8900, "lng":12.4900},
-    radius: 1000
+    center: {"lat": 22.6666667, "lng":-83.2666663888889},
+    radius: 1970000
+  });  
+
+  let IRBMCircle = new google.maps.Circle({
+      strokeColor: 'red',
+      strokeOpacity: 1,
+      strokeWeight: 2,
+      fillColor: 'red',
+      fillOpacity: 0.10,
+      // in general, we always have to *set the map* when we
+      // add features. 
+      map: my_map,
+      center: {"lat": 22.6666667, "lng":-83.2666663888889},
+      radius: 3970000
+ 
   });  
 
 }

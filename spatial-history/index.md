@@ -1,37 +1,27 @@
-# Next Section
-
-The rest of your essay should go under the map. What I've written here is a kind of markdown refresher; maybe don't delete it right away, and/or obokmark [the markdown-it demo](https://markdown-it.github.io/) where you cna bractice markdown yourself.  
-
-## in sections like this
-
-Remember you can use _italics_ and __bold__ which can also be written *like this* or **like this**
-etc. Be sure to [make use of links](http://digital.hackinghistory.ca) -- that's one of the reasons we write on the Web, and I've asked you to use links for all yor footnotes/references as well.
+The United States held strong tries to Cuba prior to the Cuban revolution in 1959. Some historians, such as Morris H. Morley, argued the United States held imperial state policies towards Cuba [Morley, 1](https://books.google.ca/books?hl=en&lr=&id=tTJRsOhcXLMC&oi=fnd&pg=PP11&dq=why+was+cuba+important+to+the+united+states&ots=yp7kU-Z3H5&sig=QooIuI4Ijkjzu5vyDqrK_FPC5Gw#v=onepage&q=why%20was%20cuba%20important%20to%20the%20united%20states&f=false). During Fulgencio Batista’s military dictatorship rule, between 1952 and 1959, the United States controlled a large influence over its economy. Most of Cuba’s exports were to the United States [Bell and Gilbert, 178](https://www.amazon.ca/World-Since-1945-International-History/dp/1472524756). In 1959, Fidel Castro led a resistance movement against Batista’s dictatorship and took hold of Havana. He was strongly anti-American and began to nationalize all American owned properties and businesses. The United States called an embargo. On April 17th, 1961, the Central Intelligence Agency (CIA) hoped to take Castro down by force. They sent 1400 Cuban exiles to land in Cuba at the Bay of Pigs and lead a revolution. However, the mission failed, and the exiles were either fatally injured or taken as prisoners [Bell and Gilbert, 179](https://www.amazon.ca/World-Since-1945-International-History/dp/1472524756).  
 
 
-We're using [markdown-it](https://github.com/markdown-it/markdown-it) to parse markdown and render it into HTML, and you cna read about all its features in the GH repository.  We use the commonpark settings, as well as some extensions: 
-
-- [github-style tables](https://help.github.com/en/articles/organizing-information-with-tables)
-- [css-like attributes](https://github.com/arve0/markdown-it-attrs)
-- [footnotes](https://github.com/markdown-it/markdown-it-footnote)
+Prior to 1959, the Soviet Union held no interest in Cuba. However, Khrushchev began to take an interest in new states coming from revolutions to gain allies for the Soviet Union. When Castro’s force swept the military dictatorship of Batista, Khrushchev had ‘no clear idea of who they were and what they stood for [Taubman, 532](https://search.library.utoronto.ca/details?4781930). Nevertheless, after his trip to the United States, Khrushchev ordered the Warsaw pact to send weapons to Havana to support Castro [Taubman, 532](https://search.library.utoronto.ca/details?4781930). Khrushchev’s and Castro’s relations grew closer between 1960 and 1961. Alarmed by the Bay of Pigs incident the Soviets expanded military aid in February 1962 [Taubman, 534](https://search.library.utoronto.ca/details?4781930). In late May the Soviet delegation offered a secret deal with Castro to set up nuclear ballistic missile bases in Cuba.
 
 
-you can also add emoji like in github :pizza: :maple_leaf:, though you may need to mess around with fonts to get it to work the way you want :-). See [list of emoji](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json) for options.  
+However, in the Cold War era, no such deal was as simple as that. Sending military assistance is one thing, but placing offensive nuclear weapons is another. Khrushchev held higher intentions than to just protect his new ally Cuba. The Soviet Unions and the United States relations soured in the late 1950s and early 1960s, as they were unable to reach an agreement about Berlin, and the Gary Powers U2 spy plane incident exposed the United States spying on the Soviet Union. Khrushchev was left with pursuing a hardline approach against the West, as he was beginning to be accused of being weak against the ‘imperialists’ [Taubman, 534](https://search.library.utoronto.ca/details?4781930). Therefore, he hoped to intimidate Kennedy, who he saw as ‘a spoiled rich young man,’ with his brinkmanship tactics [Zubok, 139](https://www.uncpress.org/book/9780807859582/a-failed-empire/). What better way to do so than in the United States’ backyard?
 
-> make blockquotes with greater-than signs.  In the unlikely evne that you wnat to nest them, that is also possible.  
+
+Also, placing _offensive_ missiles to help _defend_ Cuba did not make sense. According to the CIA, between the 1st and 5th, September construction of intermediate-range ballistic missile (IRBM) sites in Guanajay began. Further development of IRBM sites occurred in central Cuba at Remedios site between 15th and 20th September. There were also two sites constructing (medium-range ballistic missile) MRBM at San Cristobal and at Sagua la Grande between 15th and 30th September [McAuliffe, 7-8](https://books.google.ca/books?hl=en&lr=&id=GexAR4F1wtQC&oi=fnd&pg=PR3&dq=where+were+the+soviet+missiles+located+in+cuba&ots=1zRgFcMIUy&sig=hPYzBGMnMe3OKgDhazeYAgHWzww#v=onepage&q=where%20were%20the%20soviet%20missiles%20located%20in%20cuba&f=false). The MRBM’s could reach Washington D.C. from Cuba and the IRBM’s could reach all the way to San Francisco. Was Khrushchev thinking to attack the United States? 
+
+
+As a matter of fact, no. This was Khrushchev’s clear play at brinkmanship. He did not want to use nuclear weapons. He later stated, ‘The main thing was that the installation of our missiles in Cuba would, I thought, restrain the United States from precipitous military action against Castro's government.’ He hoped to frighten the United States [Taubman, 535](https://search.library.utoronto.ca/details?4781930).[^1] Khrushchev hoped to bluff the Soviet Union’s nuclear superiority to the world but instead, it brought him to face the possibility of a nuclear war.
+
+
+On October 16th Kennedy and his advisors met to discuss the photographs taken by the U2 spy plane on October 14th of the Soviet missiles on Cuba. They knew the missiles had to go. Kennedy decided the best tactic was a naval blockade [Taubman, 557](https://search.library.utoronto.ca/details?4781930). He rightfully said ‘the United States is determined that this threat to the security of the hemisphere be removed,’ he could not accept such a close threat from the Soviet Union [Taubman, 560](https://search.library.utoronto.ca/details?4781930). The Soviet Union was treading on United States security region. On October 22nd, Kennedy announced the presence of Soviet missiles Cuba on television and declared a quarantine. American warships were positions 800 kilometers from the eastern tip of Cuba [Bell and Gilbert, 186](https://www.amazon.ca/World-Since-1945-International-History/dp/1472524756).
+
+
+On 24th October six Soviet ships chose to turn around and avoid any confrontation [Bell and Gilbert, 186](https://www.amazon.ca/World-Since-1945-International-History/dp/1472524756). In the eyes of the public, Kennedy won. He managed to call Khrushchev’s bluff and policy of brinkmanship. In the following days, Kennedy and Khrushchev exchange letters in which they agreed for the Soviet removal of missiles from Cuba and the United States assured it will not invade Cuba. Privately, Robert Kennedy also agreed to remove American missiles from Turkey [Bell and Gilbert, 187-8](https://www.amazon.ca/World-Since-1945-International-History/dp/1472524756). In the end, the United States was able to protect its regional security from a Soviet threat and withstand Khrushchev’s deadly brinkmanship policy.
 
 <section id="just-testing" class="style-me-if-you-want">
 
-**Note:** to use markdown syntax inside of HTML tags, as has been done here, be sure [leave empty lines below the html tag and above the closing tag](https://stackoverflow.com/questions/29368902/how-can-i-wrap-my-markdown-in-an-html-div#answers-header). You may possibly want to do htis if you need to create high-level sections to use for flexbox or grid styling. 
-
 </section>
 
+[^1]: In fact, after the agreement that the Soviets remove ballistic missiles, they also removed tactical nuclear weapons (which Americans did not even know about) because they did not deem Castro responsible to control such weapons [Norris, 3](https://www.wilsoncenter.org/sites/default/files/2012_10_24_Norris_Cuban_Missile_Crisis_Nuclear_Order_of_Battle.pdf). 
 
-## This Heading has a class "example" and ID "specific" {#specific .example}
 
-add footnotes like this[^1] or like this ^[this is just some markdown text which wil lrender as a footnote link]
-
-footnotes willl be renumbered as you go[^note2]
-
-[^1]: note here
-
-[^note2]: you don't have to use sequential numbers, in fact you can cal lthem whatever you want 
