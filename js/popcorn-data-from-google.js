@@ -6,9 +6,7 @@ var loadPopcorn = function(){
         target: 'popcorn-container',
         apiKey: "AIzaSyAJxAlu3l5sKbilIJst2_0RFF7ATv0jTuA" // replace w/ yr own key if you have one!!
     });
-
     
-
     // Next we need to identify which Google spreadsheet we're going to want to use.  
     // You'll need to change the key to match your spreadsheet.  Remember, this is the 
     // part in the spreadsheet URL that comes between "key=" and "&"

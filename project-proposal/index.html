@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-US"></html>
 
     <head>
-        <title>Title Here | by Your Name</title>
+        <title>Project Proposal | by Paola Shushkovsky</title>
         <meta charset="UTF-8"> 
         <meta name="description" content="a project proposal." />
         <!-- these script tags load important javascript "libraries"
@@ -11,6 +11,9 @@
              make use of them nonetheless -->
         <!-- jQuery is an important framework used by many web projects  -->
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+        <script src="../js/tabletop.js"></script>
 
         <!-- markdown-it is our markdown parser, which translates markdown into HTML -->
         <script src="https://cdn.jsdelivr.net/npm/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
@@ -23,7 +26,9 @@
         <!-- https://developers.google.com/maps/documentation/javascript/get-api-key -->
         <!-- my key will *only* work on github.io and your local computer  -->
         <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJxAlu3l5sKbilIJst2_0RFF7ATv0jTuA"></script> -->
-
+        
+        <script src="../js/popcorn-complete.js"></script>
+        <script src="../js/popcorn-data-PP.js"></script>
         <!-- call all our CSS files: chota, site-wide mods, and page-specific mods -->
         
         <link rel="stylesheet" href="../css/chota.css" type="text/css" media="screen" />
@@ -47,11 +52,20 @@
             <!-- menu content is set in ../js/static-parts.js and appended here -->
         </header>
 
+        <!-- this is our audio element.  It holds the audio file. -->
+        <audio id="media" controls="controls">
+            <!-- Make sure this points to the actual mp3 file you are analyzing -->
+            <source src="https://storycorpsorg-staging.s3.amazonaws.com/uploads/FunkWebIntro-1.mp3"
+                    type="audio/mp3" />
+        </audio>
+
         <main class="main-container">
             <section id="intro"></section>
-            <!-- will be filled with markdown from index.md -->
+            <!-- This is the div where all the popcorn action will hapen -->
+            <aside id="popcorn-container"></aside>
             <section id="maintext"></section>
         </main>
+
 
         <!-- footer content is set in ../js/static-parts.js -->
         <footer id="page-footer">
@@ -79,7 +93,8 @@
              md.use(window.markdownItAttrs)
              md.use(window.markdownitFootnote)
              md.use(window.markdownitEmoji);
-
+             
+             md.enable('table');
              //retrieve the markdown files, parse them,
              // and use it to replace the contents of #intro and #maintext
 
