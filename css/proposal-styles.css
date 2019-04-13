@@ -8,8 +8,10 @@
 
 section#intro {
     grid-area: intro;
-    background-color: #DE1E3E;
-    font-family: 'soviet program', white;
+    background-color: #f2f2f2;
+    font-family:'Zilla Slab', serif;
+    color: black;
+    font-size: 14px;
 }
 
 
@@ -17,7 +19,11 @@ aside#popcorn-container {
     grid-area: popcorn;
     background-color:  #DE1E3E;
     border: double;
-    font-family: 'soviet program', white;
+    border-color: black;
+    border-width: 15px;
+    font-family: 'kroftsmann';
+    font-size: 30px;
+    color: white;
 }
 
 
@@ -34,12 +40,21 @@ aside#popcorn-container {
 
 section#maintext {
     grid-area: main;
-    background-color:  #DE1E3E;
-    font-family: 'soviet program', white;
+    background-color: #f2f2f2;
+    font-family:'Zilla Slab', serif;
+    color: black;
 }
 
 
 @media only screen and (max-width:1200px) {
+    .main-container {
+        grid-template-areas: "popcorn" "intro" "main";
+
+    }
+}
+
+
+@media only screen and (max-width:600px) {
     .main-container {
         grid-template-areas: "popcorn" "intro" "main";
     }
